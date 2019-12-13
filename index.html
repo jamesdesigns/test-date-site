@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Foxy Dating App - Login Page</title>
     <link rel="stylesheet" type="text/css" href="styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
 </head>
 <body>
     <header></header>
@@ -27,11 +28,13 @@
                         Password
                     </label>
                     <input class="form__input" id="password" type="password" name="password" required minlength="8" aria-describedby="passwordHint" autocomplete="current-password">
-                    <p class="form__hint" id="passwordHint">The password must be at least 8 characters long.</p>
+                    <!-- <p class="form__hint" id="passwordHint">The password must be at least 8 characters long.</p> -->
                 </div>
             
                 
                 <input class="form__submit" type="submit" value="Sign In">
+                <input class="form__submit2" type="submit" value="Sign In With Facebook">
+                <a href="/forgotPassword">Create Account</a>
                 <a href="/forgotPassword">Forgot password?</a>
             </form>
         </div>
