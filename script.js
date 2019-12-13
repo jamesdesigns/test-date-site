@@ -19,3 +19,9 @@ let passwordChecker = function(pass) {
         return false
     }
 }
+
+// Clears the input field when user begins typing username/password
+const text = document.querySelector('input');
+text.onclick = function() {
+    text.value = '';
+}
