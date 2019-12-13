@@ -1,9 +1,9 @@
 // JavaScript 
-let userEmail = 'abc1234'
+let username = 'abc1234'
 let password = '1234'
 
-let userChecker = function(myString) {
-    // userEmail must be greater than 6 characters AND contain 123
+let usernameChecker = function(myString) {
+    // username must be greater than 6 characters AND contain 123
     if ((myString.includes(123)) && (myString.length > 6)) {
         return true
     } else {
@@ -11,4 +11,11 @@ let userChecker = function(myString) {
     }
 }
 
-console.log(userChecker(userEmail));
+let passwordChecker = function(pass) {
+    // password must contain 1234 and be GREATER than 8 characters long
+    if ((pass.includes(1234)) && (pass.length > 8)) {
+        return true
+    } else {
+        return false
+    }
+}

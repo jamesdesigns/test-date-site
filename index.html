@@ -14,16 +14,24 @@
             <div class="header">
                 <img src="images/foxy-logo-dribble.jpg" alt="Foxy Dating Site">
             </div>
-            <form name="login" onsubmit="return validateForm();" method="post">
-            <ul>
-                <li>Username
-                    <input class="username" type="text" name="username">
-                </li>
-                <li>Password
-                    <input class="password" type="password" name="password">
-                </li>
-            </ul>
-            <input type="button" class="submit" value="Sign In" name="submit" onclick="validate()">
+            <form action="/login" method="post">
+                <div class="form__element">
+                    <label class="form__label" for="email">
+                        Username
+                    </label>
+                    <input class="form__input" id="email" type="text" name="email" required pattern="[^]+@[^]+[.][a-z]{2,63}$" autocomplete="email">
+                </div>
+            
+                <div class="form__element">
+                    <label class="form__label" for="password">
+                        Password
+                    </label>
+                    <input class="form__input" id="password" type="password" name="password" required minlength="8" aria-describedby="passwordHint" autocomplete="current-password">
+                    <p class="form__hint" id="passwordHint">The password must be at least 8 characters long.</p>
+                </div>
+            
+                <a href="/forgotPassword">Forgot password?</a>
+                <input class="form__submit" type="submit" value="Login">
             </form>
         </div>
     </section>
