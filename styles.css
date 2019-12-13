@@ -17,6 +17,13 @@ header {
     margin-right: 25%;
 }
 
+.logInForm {
+    padding: 45px;
+    margin-top: -100px;
+    background-color: white;
+    border-radius: 15px;
+}
+
 .form__element {
     margin: 0 0 1em 0;
 }
@@ -52,7 +59,7 @@ header {
 }
 
 .form__submit {
-    background: pink;
+    background: #8E2DE2;
     color: #fff;
     border: none;
     padding: 0.6em;
