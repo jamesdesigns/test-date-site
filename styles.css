@@ -25,20 +25,27 @@ header {
     border-radius: 15px;
 }
 
+label {
+    color: #ec38bc;
+}
+
 .form__element {
     margin: 0 0 1em 0;
 }
 
 .form__label {
-    font-size: 1.2em;
+    font-size: 1.1em;
     display: block;
     margin: 0 0 0.4em 0;
 }
 
 .form__input {
     width: 95.5%;
-    padding: 0.6em;
     font-size: 1.3em;
+    border: none;
+    border-bottom: 2px solid #8E2DE2;
+    margin-bottom: 20px;
+    outline: none;
 }
 
 .form__required {
@@ -64,7 +71,7 @@ header {
     color: #fff;
     border: none;
     padding: 0.6em;
-    font-size: 1.4em;
+    font-size: 1.1em;
     width: 100%;
     border-radius: 10px;
 }
@@ -74,10 +81,14 @@ header {
     color: #fff;
     border: none;
     padding: 0.6em;
-    font-size: 1.4em;
+    font-size: 1.1em;
     width: 100%;
     border-radius: 10px;
     margin-top: 5px;
+}
+
+a:link {
+    color: #ec38bc;
 }
 
 
