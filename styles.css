@@ -53,6 +53,12 @@ input {
     border-bottom: 2px solid #8E2DE2;
     margin-bottom: 20px;
     outline: none;
+    color: #B0B0B0;
+    padding-bottom: 5px;
+    font-size: .9em;
+}
+.form__input:focus {
+    color: #383838;
 }
 
 .form__required {
