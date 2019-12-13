@@ -100,10 +100,16 @@ input {
     margin-top: 5px;
 }
 
+input.form__submit2 {
+    background-image: url('images/iconfinder_BW_Facebook.svg');
+    background-repeat: no-repeat;
+}
+
 /* Create Account */
 a:link {
     color: #ec38bc;
     margin-top: 5px;
+    margin-bottom: 5%;
 }
 
 .accountSetUp {
