@@ -87,8 +87,15 @@ label {
     margin-top: 5px;
 }
 
+/* Create Account */
 a:link {
     color: #ec38bc;
+}
+
+.accountSetUp {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
 
 
