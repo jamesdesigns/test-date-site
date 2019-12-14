@@ -14,6 +14,11 @@ header {
     background: linear-gradient(to top, #3c1053, #8E2DE2); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
+.animateHeart {
+    display:block;
+    margin-top: -400px;
+}
+
 .logo {
     display:block;
     margin-left: auto;
@@ -34,6 +39,7 @@ header {
     -webkit-box-shadow: 10px 9px 18px -16px rgba(5,5,5,1);
     -moz-box-shadow: 10px 9px 18px -16px rgba(5,5,5,1);
     box-shadow: 10px 9px 18px -16px rgba(5,5,5,1);
+    z-index: 999;
 }
 
 label {
@@ -119,6 +125,31 @@ a:link {
     margin-top: 5px;
     margin-bottom: 5%;
 }
+
+.button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
+
+  .button span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+  }
+  
+  .button:hover span {
+    padding-right: 25px;
+  }
+  
+  .button:hover span:after {
+    opacity: 1;
+    right: 0;
+  }
 
 .accountSetUp {
     display: flex;

@@ -7,14 +7,17 @@
     <title>Foxy Dating App - Login Page</title>
     <link rel="stylesheet" type="text/css" href="styles.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <script src="gsap.min.js"></script>
 </head>
 <body>
-    <header><img class="logo" src="images/foxy-logo.png" alt="Foxy Dating Site"></header>
+    <header><img class="logo" src="images/foxy-logo.png" alt="Foxy Dating Site">
+        <div class="header">
+            <img class="animateHeart" src="images/hearts.png" alt="hearts">    
+        </div>
+    </header>
     <section>
         <div class="container">
-            <div class="header">
-                
-            </div>
+
             <form class="logInForm" action="/login" method="post">
                 <div class="form__element">
                     <label class="form__label" for="email">
@@ -31,8 +34,7 @@
                     <!-- <p class="form__hint" id="passwordHint">The password must be at least 8 characters long.</p> -->
                 </div>
             
-                
-                <input class="form__submit btnEffect" type="submit" value="Sign In">
+                <input class="form__submit" type="submit" value="Sign In">
                 <input class="form__submit2" type="submit" value="Sign In With Facebook">
                 <div class="accountSetUp">
                 <a href="/forgotPassword">Create Account</a>
@@ -43,5 +45,6 @@
     </section>
     <footer></footer>
     <script src="script.js"></script>
+
 </body>
 </html>

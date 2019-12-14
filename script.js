@@ -25,3 +25,6 @@ const text = document.querySelector('input');
 text.onclick = function() {
     text.value = '';
 }
+
+// GSAP animation for the hearts
+gsap.to(".animateHeart", {duration: 3, y: 35});
